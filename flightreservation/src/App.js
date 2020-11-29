@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={FindFlights} />
         <Route exact path='/displayFlights/:from/:to/:departureDate' component={DisplayFlights} />
-        <Route exact path='/passengerDetails' component={PassengerDetails} />
+        <Route exact path='/passengerDetails/:flightId' component={PassengerDetails} />
         <Route exact path='/confirmReservation' component={ConfirmReservation} />
       </Switch>
 

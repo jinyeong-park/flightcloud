@@ -7,7 +7,7 @@ class FlindFlights extends React.Component {
   // }
 
   handleSubmit(event) {
-    this.props.history.push('displayFlights/' + '/' + this.from+'/'+this.to+'/'+this.departureDate)
+    this.props.history.push('displayFlights/' + this.from +'/'+ this.to + '/'+ this.departureDate)
 
   }
 
@@ -23,7 +23,7 @@ class FlindFlights extends React.Component {
           To:<input type='text' name='to' onChange={this.onChangeHandler.bind(this)}/> */}
           Departure Date:
           <input type='text' name='departureDate'/>
-          <button onClick={this.handleSubmit.bind(this)} value='search' />
+          <button onClick={this.handleSubmit.bind(this)}>Search</button>
 
         </form>
       </div>
